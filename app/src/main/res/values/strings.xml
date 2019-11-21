@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HW07A</string>
+    <string name="log_login">LOGIN</string>
+    <string name="log_signup">SIGN UP</string>
+    <string name="su_signup">SIGN UP</string>
+    <string name="su_cancel">CANCEL</string>
+    <string name="comfirmPassword">Comfirm Password</string>
+    <string name="tv_message">Message</string>
+    <string name="tv_firstname">First Name</string>
+    <string name="tv_TimeStamp">Time Stamp</string>
+</resources>

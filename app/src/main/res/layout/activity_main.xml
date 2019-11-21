@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="217dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="395dp"
+        android:layout_height="418dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter Text Message"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RecyclerView" />
+
+    <ImageButton
+        android:id="@+id/ib_add"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/et_text"
+        app:layout_constraintTop_toBottomOf="@+id/RecyclerView"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/ib_send"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib_add"
+        app:layout_constraintTop_toBottomOf="@+id/RecyclerView"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
